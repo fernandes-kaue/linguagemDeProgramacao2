@@ -1,7 +1,7 @@
-package questao4;
+package questao4e5;
 
 public class ContaCorrente {
-    private double saldo;
+    protected double saldo;
 
     // metodos
     public boolean registrarDeposito(double valor) {
@@ -16,7 +16,7 @@ public class ContaCorrente {
 
     public boolean registrarSaque(double valor) {
         if (valor > 0) {
-            this.saldo = this.saldo - valor - (valor * 0.001);
+            this.saldo = this.saldo - valor - (valor * 0.005);
             return true;
         } else {
             System.out.println("Valor inválido para depósito.");
