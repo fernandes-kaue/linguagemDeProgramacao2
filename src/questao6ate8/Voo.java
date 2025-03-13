@@ -23,6 +23,33 @@ public class Voo {
         return assentosTotal[n] == 0;
     }
 
+    public int getTotalAssentosLivres(){
+        int totalLivres = 0;
+        for (int i : assentosTotal) {
+            if (i == 1) {
+                totalLivres++;
+            }
+        }
+        return totalLivres;
+    }
+
+    private int getTotalAssentosOcupados() {
+        int totalOcupados = 0;
+        for (int i : assentosTotal) {
+            if (i == 0) {
+                totalOcupados++;
+            }
+        }
+        return totalOcupados;
+    }
+
+    public int getTaxaOcupacao() {
+        return this.getTotalAssentosOcupados()/assentosTotal.length;
+    }
+
+    // metodo auxiliar de data??
+
+
     // constructor
     public Voo(int numero, Date dataHorario) {
         this.numero = numero;
