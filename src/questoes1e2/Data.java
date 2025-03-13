@@ -6,21 +6,21 @@ import java.time.temporal.ChronoUnit;
 
 public class Data {
 
-    private  int dia;
-    private  int mes;
-    private  int ano;
+    private int dia;
+    private int mes;
+    private int ano;
 
 
 
     // metodo para mostrar a data
-    public String mostrarData() {
+    protected String mostrarData() {
         String diaFormatado = String.format("%02d", dia);
         String mesFormatado = String.format("%02d", mes);
         return "A data armazenada é: " + diaFormatado + "/" + mesFormatado + "/" + ano;
     }
 
     //metodo para contar dias restantes do ano, feito com ajuda de chatgpt
-    public long diasRestantes() {
+    protected long diasRestantes() {
         LocalDate dataAtual = LocalDate.of(ano, mes, dia);
         LocalDate ultimoDiaAno = LocalDate.of(ano, 12,  31);
 
@@ -29,7 +29,7 @@ public class Data {
 
 
     // constructor
-    public Data(int dia, int mes, int ano) {
+    protected Data(int dia, int mes, int ano) {
         this.dia = dia;
         this.mes = mes;
         this.ano = ano;
