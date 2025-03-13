@@ -1,8 +1,8 @@
 package questoes1e2;
 
 
-import java.time.OffsetDateTime;
-import java.time.format.DateTimeFormatter;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 public class Data {
 
@@ -19,7 +19,13 @@ public class Data {
         return diaFormatado + "/" + mesFormatado + "/" + ano;
     }
 
-    //metodo para contar dias restantes do ano
+    //metodo para contar dias restantes do ano, feito com ajuda de chatgpt
+    public long diasRestantes() {
+        LocalDate dataAtual = LocalDate.of(ano, mes, dia);
+        LocalDate ultimoDiaAno = LocalDate.of(ano, 12,  31);
+
+        return ChronoUnit.DAYS.between(dataAtual, ultimoDiaAno);
+    }
 
 
     // constructor
