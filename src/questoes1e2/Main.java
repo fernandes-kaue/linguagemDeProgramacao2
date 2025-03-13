@@ -9,5 +9,11 @@ public class Main {
         Data data3 = new Data(01, 01, 1946);
         System.out.println(data3.mostrarData());
 
+        System.out.println();
+
+        System.out.println(data1.diasRestantes());
+        System.out.println(data2.diasRestantes());
+        System.out.println(data3.diasRestantes());
+
     }
 }

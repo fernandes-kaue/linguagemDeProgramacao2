@@ -16,7 +16,7 @@ public class Data {
     public String mostrarData() {
         String diaFormatado = String.format("%02d", dia);
         String mesFormatado = String.format("%02d", mes);
-        return diaFormatado + "/" + mesFormatado + "/" + ano;
+        return "A data armazenada é: " + diaFormatado + "/" + mesFormatado + "/" + ano;
     }
 
     //metodo para contar dias restantes do ano, feito com ajuda de chatgpt
