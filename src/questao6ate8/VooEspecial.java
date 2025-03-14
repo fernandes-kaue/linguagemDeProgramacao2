@@ -12,4 +12,9 @@ public class VooEspecial extends Voo {
         this.assentosTotal = new int[numeroPassageiros];
     }
 
+    public String getTotalAssentos() {
+        int total = assentosTotal.length;
+        return "O total de assentos do voo é de: " + Integer.toString(total);
+    }
+
 }
