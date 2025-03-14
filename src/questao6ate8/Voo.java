@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Voo {
     private int numero;
-    private int[] assentosTotal;
+    protected int[] assentosTotal;
     private int assentosOcupados;
     private int assentosLivres;
     private Date dataHorario;
