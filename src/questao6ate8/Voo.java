@@ -47,6 +47,12 @@ public class Voo {
         return this.getTotalAssentosOcupados()/assentosTotal.length;
     }
 
+    @Override
+    public Object clone(){
+        Voo voo = this;
+        return voo;
+    }
+
     // metodo auxiliar de data??
 
 
