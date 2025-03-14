@@ -1,6 +1,6 @@
 package questao4e5;
 
-public class ContaCorrenteEspecial extends ContaCorrente{
+class ContaCorrenteEspecial extends ContaCorrente{
     public ContaCorrenteEspecial(double saldo) {
         super(saldo);
     }
