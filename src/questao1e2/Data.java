@@ -4,7 +4,7 @@ package questao1e2;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
-public class Data {
+class Data {
 
     private int dia;
     private int mes;

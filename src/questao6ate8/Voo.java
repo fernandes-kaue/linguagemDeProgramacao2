@@ -2,7 +2,7 @@ package questao6ate8;
 
 import java.util.Date;
 
-public class Voo {
+class Voo {
     private int numero;
     protected int[] assentosTotal;
     private int assentosOcupados;

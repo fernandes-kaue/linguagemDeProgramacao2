@@ -1,6 +1,6 @@
 package questao4e5;
 
-public class ContaCorrente {
+class ContaCorrente {
     protected double saldo;
 
     // metodos

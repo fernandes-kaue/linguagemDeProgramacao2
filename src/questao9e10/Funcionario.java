@@ -1,6 +1,6 @@
 package questao9e10;
 
-public class Funcionario {
+class Funcionario {
     private String nome;
     private String sobrenome;
     private double horasTrabalhadasMes;
