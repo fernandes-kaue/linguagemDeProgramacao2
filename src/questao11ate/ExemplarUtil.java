@@ -23,5 +23,7 @@ class ExemplarUtil {
         System.out.println(ex5.getNumEmprestimos());
         System.out.println(ex6.getNumEmprestimos());
 
+        // todo -> nao entendi como faz a letra E da questa 12
+
     }
 }
