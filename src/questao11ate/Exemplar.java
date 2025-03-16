@@ -4,8 +4,8 @@ class Exemplar {
     private int numTombo;
     private String titulo;
     private String autoria;
-    private boolean aptoEmprestimo;
-    private int numEmprestimos;
+    protected boolean aptoEmprestimo;
+    protected int numEmprestimos;
 
     // construtor
     Exemplar(int numTombo, String titulo, String autoria, boolean aptoEmprestimo) {
