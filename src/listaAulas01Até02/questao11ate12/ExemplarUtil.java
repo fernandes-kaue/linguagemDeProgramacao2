@@ -1,4 +1,4 @@
-package listaDeAquecimento.questao11ate12;
+package listaAulas01Até02.questao11ate12;
 
 import java.util.Scanner;
 

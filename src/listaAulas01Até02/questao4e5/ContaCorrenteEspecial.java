@@ -1,4 +1,4 @@
-package listaDeAquecimento.questao4e5;
+package listaAulas01Até02.questao4e5;
 
 class ContaCorrenteEspecial extends ContaCorrente{
     public ContaCorrenteEspecial(double saldo) {
