@@ -1,4 +1,4 @@
-package questao1e2;
+package listaDeAquecimento.questao1e2;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package questao11ate12;
+package listaDeAquecimento.questao11ate12;
 
 class Exemplar {
     private int numTombo;

@@ -1,6 +1,6 @@
-package questao11ate12.q13;
+package listaDeAquecimento.questao11ate12.q13;
 
-import questao11ate12.Exemplar;
+import listaDeAquecimento.questao11ate12.Exemplar;
 
 import java.util.Date;
 
