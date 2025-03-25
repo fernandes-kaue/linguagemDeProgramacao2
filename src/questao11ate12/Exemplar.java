@@ -1,11 +1,11 @@
-package questao11ate;
+package questao11ate12;
 
 class Exemplar {
     private int numTombo;
     private String titulo;
     private String autoria;
-    protected boolean aptoEmprestimo;
-    protected int numEmprestimos;
+    private boolean aptoEmprestimo;
+    private int numEmprestimos;
 
     // construtor
     Exemplar(int numTombo, String titulo, String autoria, boolean aptoEmprestimo) {
@@ -21,6 +21,7 @@ class Exemplar {
         if (aptoEmprestimo){
             System.out.println("Esse livro já está apto para empréstimos!");
         } else {
+            System.out.println("Livro habilitado com sucesso!");
             this.aptoEmprestimo = true;
         }
     }
@@ -28,16 +29,29 @@ class Exemplar {
         if (!aptoEmprestimo){
             System.out.println("Esse livro já é inapto para empréstimos!");
         } else {
+            System.out.println("Livro desabilitado com sucesso!");
             this.aptoEmprestimo = false;
         }
     }
 
     void adicionarEmprestimo(){
         if (aptoEmprestimo){
+            System.out.println("Empréstimo adicionado.");
             this.numEmprestimos++;
         } else {
             System.out.println("Esse livro é inapto para empréstimos, portanto, não se pode adicionar empréstimos à ele.");
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Exemplar{" +
+                "numTombo=" + numTombo +
+                ", titulo='" + titulo + '\'' +
+                ", autoria='" + autoria + '\'' +
+                ", aptoEmprestimo=" + (aptoEmprestimo ? "Sim" : "Não") +
+                ", numEmprestimos=" + numEmprestimos +
+                '}';
     }
 
 
@@ -61,4 +75,5 @@ class Exemplar {
     public int getNumEmprestimos() {
         return numEmprestimos;
     }
+
 }
