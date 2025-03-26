@@ -1,4 +1,4 @@
-package listaAulas01Até02.questao1e2;
+package listaAulas01Ate02.questao1e2;
 
 
 import java.time.LocalDate;

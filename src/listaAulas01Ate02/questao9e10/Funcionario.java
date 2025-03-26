@@ -1,4 +1,4 @@
-package listaAulas01Até02.questao9e10;
+package listaAulas01Ate02.questao9e10;
 
 class Funcionario {
     private String nome;

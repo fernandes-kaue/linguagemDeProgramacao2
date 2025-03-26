@@ -1,4 +1,4 @@
-package listaAulas01Até02.questao11ate12;
+package listaAulas01Ate02.questao11ate12;
 
 class Exemplar {
     private int numTombo;

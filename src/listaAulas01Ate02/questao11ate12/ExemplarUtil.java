@@ -1,4 +1,4 @@
-package listaAulas01Até02.questao11ate12;
+package listaAulas01Ate02.questao11ate12;
 
 import java.util.Scanner;
 
@@ -7,12 +7,16 @@ class ExemplarUtil {
         Scanner sc = new Scanner(System.in);
         Exemplar[] livros = new Exemplar[6];
 
-        livros[0] = new Exemplar(1, "Assim Falou Zaratustra", "Friedrich Nietzsche", true);
-        livros[1] = new Exemplar(2, "Além do Bem e do Mal", "Friedrich Nietzsche", true);
-        livros[2] = new Exemplar(3, "O Crepúsculo dos Ídolos", "Friedrich Nietzsche", false);
-        livros[3] = new Exemplar(4, "A República", "Platão", true);
-        livros[4] = new Exemplar(5, "O Banquete", "Platão", true);
-        livros[5] = new Exemplar(6, "Fédon", "Platão", false);
+         /* Para testes:
+
+          livros[0] = new Exemplar(1, "Assim Falou Zaratustra", "Friedrich Nietzsche", true);
+          livros[1] = new Exemplar(4, "A República", "Platão", true);
+          livros[2] = new Exemplar(2, "Além do Bem e do Mal", "Friedrich Nietzsche", true);
+          livros[3] = new Exemplar(5, "O Banquete", "Platão", true);
+          livros[4] = new Exemplar(3, "O Crepúsculo dos Ídolos", "Friedrich Nietzsche", false);
+          livros[5] = new Exemplar(6, "Fédon", "Platão", false);
+
+         */
 
         int opcao;
 
@@ -81,7 +85,7 @@ class ExemplarUtil {
                      encontrado = false;
 
                     for (Exemplar livro : livros) {
-                        if (livro.getTitulo().equalsIgnoreCase(titulo)) {
+                        if (livro != null && livro.getTitulo().equalsIgnoreCase(titulo)) {
                             livro.habilitarEmprestimo();
                             encontrado = true;
                             break;
@@ -96,7 +100,7 @@ class ExemplarUtil {
                     encontrado = false;
 
                     for (Exemplar livro : livros) {
-                        if (livro.getTitulo().equalsIgnoreCase(titulo)) {
+                        if (livro != null && livro.getTitulo().equalsIgnoreCase(titulo)) {
                             livro.desabilitarEmprestimo();
                             encontrado = true;
                             break;
@@ -111,7 +115,7 @@ class ExemplarUtil {
                     encontrado = false;
 
                     for (Exemplar livro : livros) {
-                        if (livro.getTitulo().equalsIgnoreCase(titulo)) {
+                        if (livro != null && livro.getTitulo().equalsIgnoreCase(titulo)) {
                             livro.adicionarEmprestimo();
                             encontrado = true;
                             break;
