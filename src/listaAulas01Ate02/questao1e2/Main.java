@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:src/Lista01Recapitulacao/questao1e2/Main.java
 package Lista01Recapitulacao.questao1e2;
+========
+package listaAulas01Ate02.questao1e2;
+>>>>>>>> origin/main:src/listaAulas01Ate02/questao1e2/Main.java
 
 public class Main {
     public static void main(String[] args) {
