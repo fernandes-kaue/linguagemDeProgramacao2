@@ -1,8 +1,6 @@
-package questao11ate;
+package Lista01Recapitulacao.questao11ate;
 
 import java.util.Date;
-import java.text.SimpleDateFormat;
-import java.util.Scanner;
 
 class ExemplarDetalhado extends Exemplar {
     Date dataHora;

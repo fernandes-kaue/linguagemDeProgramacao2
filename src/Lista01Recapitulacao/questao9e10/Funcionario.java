@@ -1,4 +1,4 @@
-package questao9e10;
+package Lista01Recapitulacao.questao9e10;
 
 class Funcionario {
     private String nome;

@@ -1,4 +1,4 @@
-package questao11ate;
+package Lista01Recapitulacao.questao11ate;
 
 class Exemplar {
     private int numTombo;

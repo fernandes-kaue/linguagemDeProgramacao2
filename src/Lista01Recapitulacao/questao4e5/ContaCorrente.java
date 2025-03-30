@@ -1,4 +1,4 @@
-package questao4e5;
+package Lista01Recapitulacao.questao4e5;
 
 class ContaCorrente {
     protected double saldo;
