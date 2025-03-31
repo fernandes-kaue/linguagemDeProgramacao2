@@ -37,15 +37,15 @@ public class Conta {
 
         try {
             if (saldo - saque < saldoMinimo) {
-                throw new ArithmeticException("Erro ao sacar: saldo ficará abaixo de saldo mínimo!");
+                throw new ArithmeticException("");
             }
 
             saldo -= saque;
             System.out.println("Saque realizado com sucesso!");
 
-        } catch (ArithmeticException ae) {
-            System.out.println("Erro ao sacar: " + ae.getMessage());
-            throw ae;
+        } catch (ArithmeticException e) {
+            System.out.println("Erro ao sacar: saldo ficará abaixo de saldo mínimo!");
+            throw e;
         }
 
     }

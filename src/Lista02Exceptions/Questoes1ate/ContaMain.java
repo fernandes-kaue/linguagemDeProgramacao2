@@ -16,29 +16,23 @@ public class ContaMain {
         valor = sc.nextDouble(); // entrada de valor de depósito inicial da conta
         conta.depositar(valor); // operação de depósito
 
+        System.out.println("saldo atual " + conta.getSaldo());
+        System.out.println("saldo minimo " + conta.getSaldoMinimo());
+
         System.out.print("\nInforme Saque após Depósito Inicial: ");
         valor = sc.nextDouble(); // entrada de valor de saque após depósito
         boolean entradaValida = false;
 
         do {
             try {
-                if (conta.getSaldo() - valor < conta.getSaldoMinimo()) {
-                    throw new ArithmeticException();
-                }
                 conta.sacar(valor);
                 entradaValida = true;
 
-            } catch (ArithmeticException ae) {
-                System.out.println("Erro: " + ae.getMessage());
+            } catch (ArithmeticException e) {
+                System.out.println(e.getMessage());
                 System.out.print("Informe um novo valor para saque: ");
+                valor = sc.nextDouble();
 
-            } catch (InputMismatchException ime){
-                System.out.println("Entrada inválida! Digite um número válido.");
-                sc.next(); // Limpa entrada inválida
-
-            } catch (Exception e) {
-                System.out.println("Erro inesperado! Tente novamente.");
-                sc.next();
             }
 
         } while (!entradaValida);
