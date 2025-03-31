@@ -1,6 +1,4 @@
-package Lista02Exceptions.Questoes1ate;
-
-import java.util.InputMismatchException;
+package Lista02Exceptions.Questoes1ate2;
 
 public class Conta {
     private double saldo; // saldo corrente

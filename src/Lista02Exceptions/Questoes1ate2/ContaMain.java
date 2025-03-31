@@ -1,6 +1,5 @@
-package Lista02Exceptions.Questoes1ate;
+package Lista02Exceptions.Questoes1ate2;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ContaMain {
