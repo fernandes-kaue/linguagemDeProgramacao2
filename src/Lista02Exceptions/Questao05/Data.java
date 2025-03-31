@@ -6,11 +6,21 @@ public class Data {
     private int ano; // ano (um inteiro de 4 dígitos)
 
     public Data(int dia, int mes, int ano) {
-        this.dia = dia;
-        this.mes = mes;
-        this.ano = ano;
-    }
+        boolean valorValido = false;
 
+        do {
+            try {
+                if (dia > 1 && dia > 12) {
+
+                }
+                this.dia = dia;
+                this.mes = mes;
+                this.ano = ano;
+            } catch (DataIncorretaException e) {
+
+            }
+        } while (!valorValido);
+    }
 
 
     // retorno de string representativa da data encapsulada no formado DD/MM/AAAA
@@ -28,7 +38,7 @@ public class Data {
         if ((ano % 400 == 0) || ((ano % 4 == 0) && (ano % 100 != 0))) qtdDias[1]++;
 
         if (mes == 12) { // se mês da data for dezembro...
-        // dias restantes equivalente à diferença entre 31 e dia da data acrescida de 1 (um)
+            // dias restantes equivalente à diferença entre 31 e dia da data acrescida de 1 (um)
             return 31 - dia + 1;
         } else { // caso contrário (mês anterior a dezembro)...
             // diferença entre total de dias do mês e dia da data acrescida de 1 (um)
