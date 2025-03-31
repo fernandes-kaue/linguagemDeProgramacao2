@@ -1,26 +1,49 @@
 package Lista02Exceptions.Questoes1ate;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ContaMain {
     public static void main(String[] args) {
         double valor;
         Conta conta = null;
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Informe Saldo Mínimo: ");
-        valor = scanner.nextDouble(); // entrada de saldo mínimo de conta
+        valor = sc.nextDouble(); // entrada de saldo mínimo de conta
         conta = new Conta(valor); // inicialização de objeto da classe Conta
 
         System.out.print("\nInforme Depósito Inicial: ");
-        valor = scanner.nextDouble(); // entrada de valor de depósito inicial da conta
+        valor = sc.nextDouble(); // entrada de valor de depósito inicial da conta
         conta.depositar(valor); // operação de depósito
 
         System.out.print("\nInforme Saque após Depósito Inicial: ");
-        valor = scanner.nextDouble(); // entrada de valor de saque após depósito
-        conta.sacar(valor); // operação de depósito
-        // exibição de saldo corrente de conta após operações de depósito e saque
+        valor = sc.nextDouble(); // entrada de valor de saque após depósito
+        boolean entradaValida = false;
+
+        do {
+            try {
+                if (conta.getSaldo() - valor < conta.getSaldoMinimo()) {
+                    throw new ArithmeticException();
+                }
+                conta.sacar(valor);
+                entradaValida = true;
+
+            } catch (ArithmeticException ae) {
+                System.out.println("Erro: " + ae.getMessage());
+                System.out.print("Informe um novo valor para saque: ");
+
+            } catch (InputMismatchException ime){
+                System.out.println("Entrada inválida! Digite um número válido.");
+                sc.next(); // Limpa entrada inválida
+
+            } catch (Exception e) {
+                System.out.println("Erro inesperado! Tente novamente.");
+                sc.next();
+            }
+
+        } while (!entradaValida);
 
         System.out.println("\nSaldo Final: " + conta.getSaldo());
-        scanner.close();
+        sc.close();
     }
 }

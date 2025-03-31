@@ -43,9 +43,9 @@ public class Conta {
             saldo -= saque;
             System.out.println("Saque realizado com sucesso!");
 
-        } catch (ArithmeticException e) {
-            System.out.println("Erro ao sacar: " + e.getMessage());
-            throw e;
+        } catch (ArithmeticException ae) {
+            System.out.println("Erro ao sacar: " + ae.getMessage());
+            throw ae;
         }
 
     }
