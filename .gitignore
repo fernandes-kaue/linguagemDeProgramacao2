@@ -22,6 +22,11 @@ bin/
 /nbdist/
 /.nb-gradle/
 
+#idk
+/.idea
+/out
+lista01.LP2.iml
+
 ### VS Code ###
 .vscode/
 
