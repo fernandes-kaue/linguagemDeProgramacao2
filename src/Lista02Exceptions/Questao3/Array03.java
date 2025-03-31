@@ -1,6 +1,6 @@
-package Lista02Exceptions.Questoes3;
+package Lista02Exceptions.Questao3;
 
-public class Questao3 {
+public class Array03 {
     public static void main(String[] args) {
         int[] array = new int[] {2, 4, 6, 8, 10, 12};
 

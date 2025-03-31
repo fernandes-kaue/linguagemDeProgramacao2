@@ -1,4 +1,4 @@
-package Lista02Exceptions.Questoes1ate2;
+package Lista02Exceptions.Questao1ate2;
 
 import java.util.Scanner;
 
